@@ -6,11 +6,11 @@ import { getAuth } from "firebase-admin/auth"
 const firebaseConfig = {
   apiKey: process.env.FIREBASE_API_KEY,
   authDomain: process.env.FIREBASE_AUTH_DOMAIN,
-  projectId: "ebuddy-test-62592",
-  storageBucket: "ebuddy-test-62592.firebasestorage.app",
-  messagingSenderId: "626192657963",
-  appId: "1:626192657963:web:6fb884ce46529235f6c46e",
-  measurementId: "G-NX6QTKEK0Y",
+  projectId: process.env.FIREBASE_PROJECT_ID,
+  storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.FIREBASE_MESSAGE_ID,
+  appId: process.env.FIREBASE_APP_ID,
+  measurementId: process.env.FIREBASE_MEASUREMENT_ID,
 };
 
 const firebaseApp = initializeApp(firebaseConfig);
