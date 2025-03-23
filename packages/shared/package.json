@@ -1,0 +1,26 @@
+{
+  "name": "@repo/shared",
+  "version": "0.0.1",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist/**"
+  ],
+  "license": "ISC",
+  "scripts": {
+    "build": "tsc --build tsconfig.json",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
+    "lint": "TIMING=1 eslint \"src/*/**.ts*\""
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config": "*",
+    "typescript-config": "*",
+    "tsup": "^6.2.3",
+    "typescript": "^4.8.3"
+  }
+}
